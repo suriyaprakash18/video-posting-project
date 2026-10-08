@@ -1,0 +1,260 @@
+
+/* ============================= */
+/* Videos Page */
+/* ============================= */
+
+.videos-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+
+/* ============================= */
+/* Page Heading */
+/* ============================= */
+
+.page-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-heading h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.page-heading p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+
+/* ============================= */
+/* Video Grid */
+/* ============================= */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+/* ============================= */
+/* Video Card */
+/* ============================= */
+
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+}
+
+
+/* ============================= */
+/* Thumbnail */
+/* ============================= */
+
+.video-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ============================= */
+/* Video Information */
+/* ============================= */
+
+.video-card-content {
+  padding: 15px;
+}
+
+.video-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.video-card p {
+  margin: 0 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+
+/* ============================= */
+/* Views & Likes */
+/* ============================= */
+
+.video-stats {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: #666;
+  font-size: 13px;
+}
+
+
+/* ============================= */
+/* Watch Button */
+/* ============================= */
+
+.watch-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+}
+
+.watch-button:hover {
+  opacity: 0.85;
+}
+
+
+/* ============================= */
+/* Pagination */
+/* ============================= */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination .active-page {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+
+/* ============================= */
+/* Loading / Empty Message */
+/* ============================= */
+
+.videos-container > p {
+  text-align: center;
+  padding: 50px 20px;
+  color: #666;
+  font-size: 17px;
+}
+
+
+/* ============================= */
+/* Tablet */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-card img {
+    height: 160px;
+  }
+
+}
+
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media (max-width: 650px) {
+
+  .videos-container {
+    padding: 20px 15px 40px;
+  }
+
+  .page-heading h1 {
+    font-size: 26px;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .video-card img {
+    height: 130px;
+  }
+
+  .video-card-content {
+    padding: 10px;
+  }
+
+  .video-card h3 {
+    font-size: 15px;
+  }
+
+  .video-card p {
+    font-size: 12px;
+  }
+
+}
+
+
+/* ============================= */
+/* Small Mobile */
+/* ============================= */
+
+@media (max-width: 400px) {
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-card img {
+    height: 200px;
+  }
+
+  .pagination {
+    gap: 5px;
+  }
+
+  .pagination button {
+    min-width: 36px;
+    height: 36px;
+  }
+
+}
+ 
